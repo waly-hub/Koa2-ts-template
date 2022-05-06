@@ -1,0 +1,29 @@
+{
+  "name": "koa2-ts-template",
+  "version": "1.0.0",
+  "description": "Koa2-ts-template",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waly-hub/Koa2-ts-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waly-hub/Koa2-ts-template/issues"
+  },
+  "homepage": "https://github.com/waly-hub/Koa2-ts-template#readme",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "nodemon": "^2.0.16"
+  }
+}
