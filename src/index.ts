@@ -1,10 +1,16 @@
 import koa from 'koa'
+import koaBody from 'koa-body'
+import './config'
+import { registerRouter } from './router'
+
+
 const app = new koa()
 
-app.use((ctx, next) => {
-  ctx.body = 'hello koa'
-})
+app.use(koaBody())
 
-app.listen(3000, () => {
-  console.log('server is running');
+// 注册路由
+registerRouter(app)
+
+app.listen(process.env.SERVER_PORT, () => {
+  console.log(`http://localhost:${process.env.SERVER_PORT}`);
 })

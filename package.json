@@ -4,7 +4,8 @@
   "description": "Koa2-ts-template",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.ts"
+    "start:test": "cross-env CURRENT_ENV=test nodemon ./src/index.ts ",
+    "start:dev": "cross-env CURRENT_ENV=dev nodemon ./src/index.ts "
   },
   "repository": {
     "type": "git",
@@ -19,11 +20,16 @@
   "homepage": "https://github.com/waly-hub/Koa2-ts-template#readme",
   "dependencies": {
     "koa": "^2.13.4",
-    "koa-router": "^10.1.1"
+    "koa-body": "^5.0.0",
+    "koa-router": "^10.1.1",
+    "mongoose": "^6.3.2"
   },
   "devDependencies": {
     "@types/koa": "^2.13.4",
     "@types/koa-router": "^7.4.4",
+    "@types/mongoose": "^5.11.97",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
     "nodemon": "^2.0.16"
   }
 }
