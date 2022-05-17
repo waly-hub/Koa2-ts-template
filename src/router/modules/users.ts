@@ -6,4 +6,8 @@ usersRouter.post('/register', User.register)
 
 usersRouter.post('/login', User.login)
 
+usersRouter.post('/getUserInfo', User.getUserInfo)
+
+
+
 export default usersRouter

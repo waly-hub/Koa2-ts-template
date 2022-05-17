@@ -15,7 +15,6 @@ const filePathInfo = (p: string) => path.parse(p)
  */
 const autoImportFiles = (dir: string, isRecursive: boolean = false, re: RegExp) => {
   let fileList: Array<any> = []
-
   function readFileList(dir: string, isRecursive: boolean = false, re: RegExp) {
     const files = fs.readdirSync(dir)
     files.forEach(item => {
@@ -60,5 +59,6 @@ const autoRegisterRouter = (dir: string, isRecursive: boolean = false, re: RegEx
     const res = await item.data()
     app.use(res.default.routes())
   })
+
 }
 export default autoRegisterRouter
